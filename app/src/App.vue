@@ -10,6 +10,7 @@ export default {
   name: 'app'
 }
 require('./assets/style.scss')
+require('./assets/bower_components/KNACSS/sass/knacss.scss')
 
 </script>
 
