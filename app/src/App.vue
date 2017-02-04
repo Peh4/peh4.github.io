@@ -9,6 +9,8 @@
 export default {
   name: 'app'
 }
+require('./assets/style.scss')
+
 </script>
 
 <style>
