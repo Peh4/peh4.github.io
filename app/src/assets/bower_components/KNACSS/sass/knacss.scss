@@ -66,41 +66,31 @@
 // @import "my-styles";
 
 #app {
+  background: #ff5f64 none;
+}
+.content {
  margin: 0 auto; 
- background: #ff5f64 none;
+ background: #5f64ff none;
 }
 
+.content {
+  @include respond-to("tiny-up") {
+    max-width: $tiny;
+  }
 
+  @include respond-to("small-up") {
+    max-width: $small;
+  }
 
+  @include respond-to("medium-up") {
+    max-width: $medium;
+  }
 
+  @include respond-to("large-up") {
+    max-width: $large;
+  }
 
-
-@include respond-to("tiny-up") {
-	#app {
-	 max-width: $tiny;
-	}
-}
-
-@include respond-to("small-up") {
-	#app {
-	 max-width: $small;
-	}
-}
-
-@include respond-to("medium-up") {
-	#app {
-	 max-width: $medium;
-	}
-}
-
-@include respond-to("large-up") {
-	#app {
-	 max-width: $large;
-	}
-}
-
-@include respond-to("extra-large-up") {
-	#app {
-	 max-width: $extra-large;
-	}
+  @include respond-to("extra-large-up") {
+    max-width: $extra-large;
+  }
 }

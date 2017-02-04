@@ -1,6 +1,8 @@
 <template>
-  <footer class="MyFooter">
-    CCBY Pierre-Alain Leboucher
+  <footer id="footer">
+    <div class="content">
+      CCBY Pierre-Alain Leboucher
+    </div>
   </footer>
 </template>
 

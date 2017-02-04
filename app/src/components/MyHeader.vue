@@ -1,8 +1,9 @@
 <template>
-  <header class="MyHeader">
-    <h1>{{ msg }}</h1>
-    <img src="../assets/logo.png" height="200" width="200" :alt="msg">
-    cool
+  <header id="header">
+    <div class="content">
+      <h1>{{ msg }}</h1>
+      <img src="../assets/logo.png" height="200" width="200" :alt="msg">
+    </div>
   </header>
 </template>
 
@@ -11,7 +12,7 @@ export default {
   name: 'MyHeader',
   data () {
     return {
-      msg: 'Welcome to Pierre-Alain\'s Protfolio',
+      msg: 'Welcome to Pierre-Alain\'s Portfolio',
       logo: '../../assets/logo.png'
     }
   }

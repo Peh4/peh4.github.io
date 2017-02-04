@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
     <MyHeader></MyHeader>
+    <div class="w100">
+      hello
+    </div>
     <MyFooter></MyFooter>
   </div>
 </template>
