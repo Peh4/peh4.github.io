@@ -4,6 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 import Hello from 'components/Hello'
+import User from 'components/User'
 
 export default new Router({
   routes: [
@@ -11,6 +12,9 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: Hello
-    }
+    },
+    { path: '/user/:id',
+      name: 'User',
+      component: User }
   ]
 })
