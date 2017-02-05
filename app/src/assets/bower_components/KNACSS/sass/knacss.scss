@@ -66,18 +66,20 @@
 // @import "my-styles";
 
 #app {
-  background: #fff5f4 none;
+  
+  background: #f6fff5 none;
+  color: #675fef;
+  
 }
 
-.grid-3 > * {
-  background: #f5fff4 none;		
-  padding: 2rem;	
+header {
+	border-top: 3px solid #f6ff85;
 }
+
+.main {min-height: 600px;}
 
 .content {
  margin: 0 auto; 
- 
- background: #f5f6ff none;
 }
 .content > *{
   padding: 2rem;	

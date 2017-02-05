@@ -1,7 +1,9 @@
 <template>
   <header id="header">
     <div class="content">
-      <h1><router-link to="/">{{ msg }}</router-link></h1>
+      <div class="grid-4-small-2 has-gutter">
+        <router-link class="center" to="/">{{ msg }}</router-link>
+      </div>
     </div>
   </header>
 </template>

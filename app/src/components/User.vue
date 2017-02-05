@@ -3,11 +3,11 @@
   <div class="user">
     <MyHeader></MyHeader>
     <transition name="slide" mode="out-in">
-      <div class="content" :key="$route.params.id">
+      <div class="content main" :key="$route.params.id">
         <div>User {{ $route.params.id }}</div>
       </div>
     </transition>
-    <!-- <MyFooter></MyFooter> -->
+    <MyFooter></MyFooter>
   </div>
   
 </template>

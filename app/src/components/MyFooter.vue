@@ -1,7 +1,7 @@
 <template>
   <footer id="footer">
     <div class="content">
-      <p>CCBY Pierre-Alain Leboucher</p>
+      <p>© 2017 Pierre-Alain Leboucher</p>
     </div>
   </footer>
 </template>
