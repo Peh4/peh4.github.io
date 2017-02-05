@@ -3,7 +3,7 @@
 /* ---------------------------------- */
 /* Doc : http://grillade.knacss.com */
 // gutter values for grid layouts. Unit can be: %, px, em, rem
-$grid-gutters: ( '': 1rem, '-l': 2rem, '-xl': 4rem );
+$grid-gutters: ( '': 2rem, '-l': 3rem, '-xl': 4rem );
 // IEfixing, see
 // https://github.com/alsacreations/KNACSS/issues/133;
 $iefix: 0.01px;

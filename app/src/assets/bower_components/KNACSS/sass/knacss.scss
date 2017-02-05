@@ -66,11 +66,21 @@
 // @import "my-styles";
 
 #app {
-  background: #ff5f64 none;
+  background: #fff5f4 none;
 }
+
+.grid-3 > * {
+  background: #f5fff4 none;		
+  padding: 2rem;	
+}
+
 .content {
  margin: 0 auto; 
- background: #5f64ff none;
+ 
+ background: #f5f6ff none;
+}
+.content > *{
+  padding: 2rem;	
 }
 
 .content {
