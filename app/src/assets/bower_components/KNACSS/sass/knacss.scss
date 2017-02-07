@@ -67,26 +67,38 @@
 
 #app {
   
-  background: #f6fff5 none;
-  color: #675fef;
+  min-height: 100vh;
   
 }
 
 header {
-	border-top: 3px solid #f6ff85;
+	 
+	.title {
+	  position: fixed;	
+    top:0;
+	  	a, p, h1 {
+		  font-size: 1.2rem;
+		  font-weight: 100;
+      text-decoration: none;	
+      line-height: 1;
+
+		}
+		
+	}
 }
 
-.main {min-height: 600px;}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+
 
 .content {
+
  margin: 0 auto; 
-}
-.content > *{
-  padding: 2rem;	
-}
 
-.content {
-  @include respond-to("tiny-up") {
+ @include respond-to("tiny-up") {
     max-width: $tiny;
   }
 
@@ -104,5 +116,13 @@ header {
 
   @include respond-to("extra-large-up") {
     max-width: $extra-large;
+  }
+
+  & > * {
+    padding: 2rem;	
+  }
+  &.main {
+    margin: 100px auto;   
+    background: #eff7e6;
   }
 }
