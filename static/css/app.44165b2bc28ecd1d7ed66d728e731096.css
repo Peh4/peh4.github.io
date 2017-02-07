@@ -1881,40 +1881,43 @@ ul.unstyled {
 /* ----------------------------- */
 /* Here should go your own CSS styles */
 #app {
-  background: #f6fff5 none;
-  color: #675fef; }
+  min-height: 100vh; }
 
-header {
-  border-top: 3px solid #f6ff85; }
+header .title {
+  position: fixed;
+  top: 0; }
+  header .title a, header .title p, header .title h1 {
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-decoration: none;
+    line-height: 1; }
 
-.main {
-  min-height: 600px; }
+footer {
+  position: fixed;
+  bottom: 0; }
 
 .content {
   margin: 0 auto; }
-
-.content > * {
-  padding: 2rem; }
-
-@media screen and (min-width: 544px) {
-  .content {
-    max-width: 543px; } }
-
-@media screen and (min-width: 768px) {
-  .content {
-    max-width: 767px; } }
-
-@media screen and (min-width: 992px) {
-  .content {
-    max-width: 991px; } }
-
-@media screen and (min-width: 1200px) {
-  .content {
-    max-width: 1199px; } }
-
-@media screen and (min-width: 1440px) {
-  .content {
-    max-width: 1439px; } }
+  @media screen and (min-width: 544px) {
+    .content {
+      max-width: 543px; } }
+  @media screen and (min-width: 768px) {
+    .content {
+      max-width: 767px; } }
+  @media screen and (min-width: 992px) {
+    .content {
+      max-width: 991px; } }
+  @media screen and (min-width: 1200px) {
+    .content {
+      max-width: 1199px; } }
+  @media screen and (min-width: 1440px) {
+    .content {
+      max-width: 1439px; } }
+  .content > * {
+    padding: 2rem; }
+  .content.main {
+    margin: 100px auto;
+    background: #eff7e6; }
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
@@ -1935,4 +1938,4 @@ header {
 }
 
 
-/*# sourceMappingURL=app.974ecb2a7f4f553cada5e61e6756e8fa.css.map*/
+/*# sourceMappingURL=app.44165b2bc28ecd1d7ed66d728e731096.css.map*/
