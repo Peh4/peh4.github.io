@@ -408,15 +408,15 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: #fff;
-  color: #000;
+  background-color: #f8f9fa;
+  color: #151926;
   font-family: sans-serif;
   line-height: 1.5; }
 
 a {
-  color: #333; }
+  color: #151926; }
   a:hover, a:focus, a:active {
-    color: #000; }
+    color: #ff4200; }
 
 ul,
 ol {
@@ -810,7 +810,7 @@ input,
 optgroup,
 select,
 textarea {
-  color: #000; }
+  color: #151926; }
 
 label {
   vertical-align: middle;
@@ -1880,21 +1880,36 @@ ul.unstyled {
 /* ==Own stylesheet              */
 /* ----------------------------- */
 /* Here should go your own CSS styles */
+body {
+  background: #f8f9fa none; }
+
 #app {
   min-height: 100vh; }
 
-header .title {
-  position: fixed;
-  top: 0; }
-  header .title a, header .title p, header .title h1 {
+header .content {
+  padding: 7.5% 10% 0; }
+  header .content a, header .content p, header .content h1 {
     font-size: 1.2rem;
     font-weight: 100;
     text-decoration: none;
-    line-height: 1; }
+    line-height: 1;
+    letter-spacing: 0.15em; }
+  header .content nav ul {
+    float: right; }
+  header .content nav li {
+    display: inline; }
+  header .content nav a {
+    display: block;
+    float: left;
+    padding: 13px 15px 12px;
+    transition: background-color 0.3s;
+    border-bottom: solid 2px transparent; }
+    header .content nav a:hover {
+      background: #fff none;
+      border-bottom: solid 2px #ff4200; }
 
-footer {
-  position: fixed;
-  bottom: 0; }
+body::selection, body::-moz-selection {
+  background: #ff4200; }
 
 .content {
   margin: 0 auto; }
@@ -1915,9 +1930,44 @@ footer {
       max-width: 1439px; } }
   .content > * {
     padding: 2rem; }
-  .content.main {
-    margin: 100px auto;
-    background: #eff7e6; }
+
+.main {
+  padding: 0 10% 0; }
+  .main > div {
+    min-height: 575px; }
+
+.text {
+  position: relative;
+  background: #ff4200 none;
+  font-family: serif;
+  font-size: 1.8rem;
+  font-weight: 100;
+  text-decoration: none;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  padding: 75px 40px 0 45px; }
+  .text:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(248, 249, 250, 0.95) none;
+    z-index: 1; }
+  .text p {
+    z-index: 100;
+    position: relative; }
+
+.illustration {
+  background: #ff4200 none; }
+
+footer {
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-decoration: none;
+  line-height: 1;
+  letter-spacing: 0.15em; }
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
@@ -1938,4 +1988,4 @@ footer {
 }
 
 
-/*# sourceMappingURL=app.44165b2bc28ecd1d7ed66d728e731096.css.map*/
+/*# sourceMappingURL=app.66c5a38e533575cdc6230108fb9ed5f3.css.map*/
