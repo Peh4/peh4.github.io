@@ -158,6 +158,17 @@ body::selection, body::-moz-selection {
       min-height: 575px;
       
     }
+    ul, li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid $base-color;
+      padding-bottom: 3px;
+
+    }
   }
 .text {
   &:before {
