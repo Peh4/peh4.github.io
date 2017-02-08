@@ -5,9 +5,9 @@
         <h1><router-link to="/">{{ msg }}</router-link></h1>
       </div>
       <nav><ul>
-        <li><a href="">Profil</a></li>
-        <li><a href="">Work</a></li>
-        <li><a href="">Contact</a></li>
+        <li><router-link to="/">Profil</router-link></li>
+        <li><router-link to="/travaux">Travaux</router-link></li>
+        <li><router-link to="/contact">Contact</router-link></li>
       </ul></nav>
     </div>
   </header>

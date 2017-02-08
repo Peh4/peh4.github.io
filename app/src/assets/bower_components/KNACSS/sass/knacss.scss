@@ -168,7 +168,7 @@ body::selection, body::-moz-selection {
     background: fade-out($base-background, 0.05) none;
     z-index: 1;
   }
-  p {
+  > * {
     z-index: 100;
     position: relative;
 
