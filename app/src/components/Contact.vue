@@ -1,7 +1,7 @@
 <template>
    <transition name="fade">
 
-  <div class="hello">
+  <div>
 
     <MyHeader></MyHeader>
 
@@ -12,11 +12,9 @@
           
         </div>
         <div class="text">
-          <p>Bonjour, je m’appelle Pierre-Alain.<br/>
-Je suis web-designer et intégrateur.
-Actuellement en Freelance, je suis à l'écoute de nouvelles opportunités.<br/><br/>
-
-J'ai été webmaster & resp. graphisme chez Reporters sans frontières. J'ai aussi travaillé précédemment pour des clients variés tels que la HATVP, ALGECO, l'OKFfr, Mission enfance…</p>
+        <p>Pierre-Alain Leboucher<br>
+        pierrealainleboucher@gmail.com<br>
+        06 86 68 43 46</p>
         </div>
       </div>
 
@@ -32,7 +30,7 @@ import MyHeader from './MyHeader.vue'
 import MyFooter from './MyFooter.vue'
 
 export default {
-  name: 'hello',
+  name: 'Contact',
   components: {
     MyHeader,
     MyFooter

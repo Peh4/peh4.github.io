@@ -1,10 +1,14 @@
 <template>
   <header id="header">
-    <div class="content">
+    <div class="content grid-2">
       <div class="title">
         <h1><router-link to="/">{{ msg }}</router-link></h1>
-        <p>{{ sub }}</p>
-        </div>
+      </div>
+      <nav><ul>
+        <li><router-link to="/">Profil</router-link></li>
+        <li><router-link to="/travaux">Travaux</router-link></li>
+        <li><router-link to="/contact">Contact</router-link></li>
+      </ul></nav>
     </div>
   </header>
 </template>
@@ -14,8 +18,7 @@ export default {
   name: 'MyHeader',
   data () {
     return {
-      msg: 'Pierre-Alain Leboucher',
-      sub: 'web-designer',
+      msg: 'P-A',
       logo: '../../assets/logo.png'
     }
   }
