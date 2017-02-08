@@ -195,3 +195,23 @@ footer {
   line-height: 1;
   letter-spacing: 0.15em;
 }
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-active {
+  opacity:0;
+}
+.slide-enter-active, .slide-leave-active {
+  transition: transform .5s, opacity .5s;
+}
+.slide-enter {
+  transform: translateY(-50px);
+  opacity: 0;    
+}
+
+.slide-leave-active {
+  transform: translateY(200px);
+  opacity: 0;
+}
