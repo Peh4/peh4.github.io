@@ -4,8 +4,9 @@
     <MyHeader></MyHeader>
     
     <div class="content main">
-    
-      <div class="grid-2">
+
+    <transition name="slide" appear mode="out-in">
+      <div class="grid-2" :key="$route.params.id" >
         <div class="illustration">
           
         </div>
@@ -13,8 +14,8 @@
         
 
           <div class="text">
-            <transition name="slide" appear>
-              <div :key="$route.params.id">
+            
+              <div>
                 <p>Projet {{ $route.params.id }}</p>
                 <ul>
                   <li>
@@ -28,10 +29,11 @@
                   </li>
                 </ul>
               </div>
-            </transition>
+            
           </div>
             
         </div>
+        </transition>
       </div>
     
     <MyFooter></MyFooter>
@@ -57,7 +59,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

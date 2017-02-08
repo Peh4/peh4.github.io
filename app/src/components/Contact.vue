@@ -1,28 +1,29 @@
 <template>
-   <transition name="fade">
-
-  <div>
-
+  
+  <div class="contact">
+   
     <MyHeader></MyHeader>
-
-    <div class="content main">
-
-      <div class="grid-2">
-        <div class="illustration">
-          
+    
+      <div class="content main">
+        <transition name="slide" appear>
+        <div class="grid-2">
+          <div class="illustration">
+            
+          </div>
+          <div class="text">
+          <p>Pierre-Alain Leboucher<br>
+          pierrealainleboucher@gmail.com<br>
+          06 86 68 43 46</p>
+          </div>
         </div>
-        <div class="text">
-        <p>Pierre-Alain Leboucher<br>
-        pierrealainleboucher@gmail.com<br>
-        06 86 68 43 46</p>
-        </div>
+        </transition>
+
       </div>
-
-    </div>
+    
     <MyFooter></MyFooter>
     
   </div>
-  </transition>
+  
 </template>
 
 <script>

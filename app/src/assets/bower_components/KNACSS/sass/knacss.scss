@@ -71,7 +71,7 @@ body { background: $base-background none;}
 
 #app {
   
-  min-height: 100vh;
+
   
 }
 
@@ -85,7 +85,6 @@ header {
       text-decoration: none;	
       line-height: 1;
       letter-spacing: 0.15em;
-
 		}
     nav {
       ul {
@@ -103,6 +102,7 @@ header {
         padding: 13px 15px 12px;
         transition: background-color 0.3s;
         border-bottom: solid 2px transparent;
+
 
         &:hover {
           background: #fff none;
@@ -152,6 +152,8 @@ body::selection, body::-moz-selection {
 
 .main {  
     padding: 0 10% 0;
+    min-height: 100vh;
+
     & > div{
       min-height: 575px;
       
@@ -203,15 +205,19 @@ footer {
 .fade-enter, .fade-leave-active {
   opacity:0;
 }
-.slide-enter-active, .slide-leave-active {
-  transition: transform .5s, opacity .5s;
-}
-.slide-enter {
-  transform: translateY(-50px);
-  opacity: 0;    
+.slide-enter-active {
+  transition: opacity .3s, filter .1s;
 }
 
 .slide-leave-active {
-  transform: translateY(200px);
-  opacity: 0;
+  //transition: transform .1s, opacity .1s, filter .1s;  
 }
+.slide-enter, .slide-leave-active{
+  opacity: .7;
+  filter: blur(.2px);
+}
+// .slide-leave-active {
+//   transform: translateX(-2px);
+//   opacity: .8;
+//   filter: blur(2px); 
+// }
