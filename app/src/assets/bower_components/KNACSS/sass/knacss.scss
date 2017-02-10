@@ -70,6 +70,11 @@ $background : #f8f9fa;
 body { background: $base-background none;}
 
 #app {
+
+  & > div {
+    min-height: 50vh;
+    overflow: hidden;
+  }
   
 
   
@@ -78,7 +83,7 @@ body { background: $base-background none;}
 header {
 
   .content {
-    padding: 7% 0 0;
+    padding: 4% 0 0;
 	  a, p, h1 {
 		  font-size: 1.2rem;
 		  font-weight: 100;
@@ -154,10 +159,6 @@ body::selection, body::-moz-selection {
 
 .main {  
 
-    & > div{
-      min-height: 575px;
-      
-    }
     ul, li {
       list-style: none;
       padding: 0;
@@ -185,14 +186,33 @@ body::selection, body::-moz-selection {
   background: $color4 none;
 }
 
+#images {
+  background: $second-background none;
+  .img {
+    margin-bottom: 2rem;
+  }
+}
+
 footer {
   font-size: 1.2rem;
   font-weight: 100;
   text-decoration: none;  
   line-height: 1;
   letter-spacing: 0.15em;
+
 }
 
+#metadata {
+  font-size: 0.75em;
+}
+
+#navProjets {
+
+  a {
+    text-decoration: none;
+  }
+  
+}
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
@@ -201,15 +221,22 @@ footer {
   opacity:0;
 }
 .slide-enter-active {
-  transition: opacity .3s, filter .1s;
+  transition: transform .3s, opacity .3s, filter .3s;
 }
 
 .slide-leave-active {
-  //transition: transform .1s, opacity .1s, filter .1s;  
+  transition: transform .1s, opacity .1s, filter .1s;  
 }
-.slide-enter, .slide-leave-active{
+.slide-enter {
   opacity: .7;
   filter: blur(.2px);
+  transform: translate(-1000px);
+}
+
+.slide-leave-active{
+  opacity: .7;
+  filter: blur(.2px);
+  transform: translate(10px);
 }
 
 

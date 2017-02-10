@@ -29,8 +29,9 @@
 
       </transition>
 
-      <MyFooter></MyFooter>
+      
     </div>
+    <MyFooter></MyFooter>
   
 </template>
 
