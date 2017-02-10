@@ -17,17 +17,23 @@
             
               <div>
                 <p>Projet {{ $route.params.id }}</p>
-                <ul>
-                  <li>
-                    <router-link to="/projet/0">projet 1</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/projet/1">projet 2</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/projet/2">projet 3</router-link>
-                  </li>
-                </ul>
+                
+                {{ portfolio.projets[$route.params.id].name }}
+
+                <br/>
+                  <router-link 
+                    v-if="$route.params.id > 0" 
+                    :to="'/projet/'+($route.params.id-1)">
+                    {{ portfolio.projets[Number($route.params.id)-1].name }}
+                </router-link>
+                <br>
+                <router-link 
+                    v-if="$route.params.id < portfolio.projets.length-1" 
+                    :to="'/projet/'+(Number($route.params.id)+1)">
+                    {{ portfolio.projets[Number($route.params.id)+1].name }}
+                </router-link>
+
+
               </div>
             
           </div>
@@ -45,12 +51,14 @@
 <script>
 import MyHeader from './MyHeader.vue'
 import MyFooter from './MyFooter.vue'
+import Portfolio from '../assets/portfolio.json'
 
 export default {
   name: 'projet',
   data () {
     return {
-      msg: 'Welcome to Pierre-Alain\'s Protfolio'
+      msg: 'Welcome to Pierre-Alain\'s Protfolio',
+      portfolio: Portfolio
     }
   },
   components: {

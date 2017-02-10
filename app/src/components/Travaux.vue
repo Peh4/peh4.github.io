@@ -14,9 +14,11 @@
             <p>Travaux</p>
 
             <ul>
-              <li v-for="projet in portfolio.projets">
-                {{ projet.name }}
-                <a v-if="projet.url" v-bind:href="projet.url"> Visiter le site </a>
+              <li v-for="(projet, index) in portfolio.projets">
+                <router-link :to="'/projet/'+index">
+                {{ projet.name }}</router-link>
+
+                <a v-if="projet.url" :href="projet.url"> Visiter le site </a>
               </li>
 
               

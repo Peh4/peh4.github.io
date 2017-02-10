@@ -3,51 +3,65 @@
     {
       "name": "Hatvp",
       "desc": "",
-      "tags": {},
+      "tags": [ "Intégration", "html / css / js", "angular" ],
+      "client": "HATVP",
       "url": "https://declarations.hatvp.fr",
-      "img": []
+      "images": []
     },
     {
       "name": "The Dataviz Card Game",
       "desc": "",
-      "tags": {},
-      "url": "",
-      "img": []
+      "tags": [ "Design graphique", "print / web", "Dataviz" ],
+      "Client": "OKF-fr",
+      "url": "http://ecoledesdonnees.github.io/dataviz-card-game/",
+      "images": []
     },
     {
-      "name": "12 mars : Collateral Freedom",
+      "name": "12 mars",
       "desc": "",
-      "tags": {},
-      "url": "",
-      "img": []
+      "Client": "RSF",
+      "tags": [ "Design graphique", "intégration", "Wordpress", "Multilangue", "Dataviz" ],
+      "url": "//12mars.rsf.org/2014-fr/",
+      "images": []
+    },
+    {
+      "name": "Collateral Freedom",
+      "desc": "",
+      "client": "RSF",
+      "tags": [ "Design graphique", "intégration", "Wordpress", "Multilangue" ],
+      "url": "//12mars.rsf.org/2016-fr/",
+      "images": []
     },
     {
       "name":"Bilans liberté de la presse, RSF",
       "desc": "",
       "tags": {},
-      "url": "",
-      "img": []
+      "client": "RSF",
+      "url": "//rsf.org/sites/default/files/bilan-2014-fr.pdf",
+      "images": []
     },
     {
-      "name": "Hefed",
+      "name": "Site web HEFED",
       "desc": "",
       "tags": {},
-      "url": "",
-      "img": []
+      "client": "Groupe HEFED",
+      "url": "//hefed.fr/",
+      "images": []
     },
     {
       "name": "Logos",
       "desc": "",
       "tags": {},
       "url": "",
-      "img": []
+      "images": []
     },
     {
       "name": "C•A•L•U•M•B•I",
       "desc": "",
       "tags": {},
-      "url": "",
-      "img": []
+      "client": "Mayu Calumbi",
+      "url": "//calumbi.fr",
+      "images": []
     }
   ]
 }
