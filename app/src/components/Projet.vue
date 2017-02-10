@@ -5,7 +5,7 @@
     
     <div class="content main">
 
-    <transition name="slide" appear mode="out-in">
+    <transition name="projet" appear mode="out-in">
       <div class="grid-2" :key="$route.params.id" >
         <div class="illustration">
           

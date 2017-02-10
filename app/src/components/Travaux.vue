@@ -12,16 +12,15 @@
           </div>
           <div class="text">
             <p>Travaux</p>
+
             <ul>
-              <li>
-                <router-link to="/projet/0">projet 1</router-link>
+              <li v-for="projet in portfolio.projets">
+                {{ projet.name }}
+                <a v-if="projet.url" v-bind:href="projet.url"> Visiter le site </a>
               </li>
-              <li>
-                <router-link to="/projet/1">projet 2</router-link>
-              </li>
-              <li>
-                <router-link to="/projet/2">projet 3</router-link>
-              </li>
+
+              
+              
             </ul>
           </div>
         </div>
@@ -36,12 +35,18 @@
 <script>
 import MyHeader from './MyHeader.vue'
 import MyFooter from './MyFooter.vue'
+import Portfolio from '../assets/portfolio.json'
 
 export default {
   name: 'Travaux',
   components: {
     MyHeader,
     MyFooter
+  },
+  data () {
+    return {
+      portfolio: Portfolio
+    }
   }
 }
 </script>
