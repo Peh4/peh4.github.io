@@ -65,13 +65,13 @@
 // You can also link them with a Sass @import
 // @import "my-styles";
 
-@include font-face("AG",'../../../../../static/Fonts/AGBk', normal, normal);
-@include font-face("AG",'../../../../../static/Fonts/AGBkObl',normal, italic);
-@include font-face("AG",'../../../../../static/Fonts/AGBold', bold, normal);
-@include font-face("AG",'../../../../../static/Fonts/AGBoldObl', bold, italic);
+@include font-face("AG",'../../../../../static/fonts/AGBk', normal, normal);
+@include font-face("AG",'../../../../../static/fonts/AGBkObl',normal, italic);
+@include font-face("AG",'../../../../../static/fonts/AGBold', bold, normal);
+@include font-face("AG",'../../../../../static/fonts/AGBoldObl', bold, italic);
 
-@include font-face("Sy",'../../../../../static/Fonts/SyMediumItalic');
-@include font-face("Sy",'../../../../../static/Fonts/SyBoldItalic', bold);
+@include font-face("Sy",'../../../../../static/fonts/SyMediumItalic');
+@include font-face("Sy",'../../../../../static/fonts/SyBoldItalic', bold);
 
 $background : #f8f9fa;
 
