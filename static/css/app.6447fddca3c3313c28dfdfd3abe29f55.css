@@ -416,7 +416,7 @@ body {
 a {
   color: #151926; }
   a:hover, a:focus, a:active {
-    color: #ff4200; }
+    color: #ff2200; }
 
 ul,
 ol {
@@ -1949,36 +1949,34 @@ header {
       border-bottom: solid 2px #ff4200; }
 
 body::selection, body::-moz-selection {
-  background: #ff4200; }
+  background: #ff2200; }
 
 .content {
   margin: 0 auto; }
   @media screen and (min-width: 544px) {
     .content {
       max-width: 543px; }
-      .content .illustration {
-        max-height: 306.8px;
-        font-size: 6em; } }
+      .content #illustration {
+        max-height: 306.8px; } }
   @media screen and (min-width: 768px) {
     .content {
       max-width: 767px; }
-      .content .illustration {
-        max-height: 396.4px;
-        font-size: 8em; } }
+      .content #illustration {
+        max-height: 396.4px; } }
   @media screen and (min-width: 992px) {
     .content {
       max-width: 792.8px; }
-      .content .illustration {
+      .content #illustration {
         max-height: 396.4px; } }
   @media screen and (min-width: 1200px) {
     .content {
       max-width: 959.2px; }
-      .content .illustration {
+      .content #illustration {
         max-height: 479.6px; } }
   @media screen and (min-width: 1440px) {
     .content {
       max-width: 1151.2px; }
-      .content .illustration {
+      .content #illustration {
         min-height: 575.6px; } }
   .content > * {
     padding: 2rem; }
@@ -1993,6 +1991,14 @@ body::selection, body::-moz-selection {
   border-bottom: 1px solid #151926;
   padding-bottom: 3px; }
 
+::selection {
+  background: #151926;
+  color: #fff; }
+
+::-moz-selection {
+  background: #151926;
+  color: #fff; }
+
 .text {
   font-family: "Sy";
   font-size: 1.65rem;
@@ -2004,10 +2010,30 @@ body::selection, body::-moz-selection {
       content: "\F054";
       font-family: FontAwesome; }
 
-.illustration {
-  background: #ff4200 none;
-  font-weight: bold;
-  font-size: 10em; }
+#illustration {
+  background: #ff2200 none;
+  font-weight: bold; }
+  #illustration > div {
+    padding-top: 35%;
+    font-size: 9em; }
+  #illustration.projets div {
+    display: none; }
+  #illustration.projet-0 {
+    background: #ff2200 url(./../static/img/home-HATVP.8fbc717.jpg) no-repeat center center scroll; }
+  #illustration.projet-1 {
+    background: #ff2200 url(./../static/img/home-DCG.67e5841.jpg) no-repeat center center scroll; }
+  #illustration.projet-2 {
+    background: #ff2200 url(./../static/img/home-12mars.bff24e5.jpg) no-repeat center center scroll; }
+  #illustration.projet-3 {
+    background: #ff2200 url(./../static/img/home-collateralFreedom.dbf1f6b.jpg) no-repeat center center scroll; }
+  #illustration.projet-4 {
+    background: #ff2200 url(./../static/img/home-Bilans.5ff45da.jpg) no-repeat center center scroll; }
+  #illustration.projet-5 {
+    background: #ff2200 url(./../static/img/home-HEFED.acb0560.jpg) no-repeat center center scroll; }
+  #illustration.projet-6 {
+    background: #ff2200 url(./../static/img/home-logos.f334672.jpg) no-repeat center center scroll; }
+  #illustration.projet-7 {
+    background: #ff2200 url(./../static/img/home-Calumbi.e92075e.jpg) no-repeat center center scroll; }
 
 .hello .listProjet {
   margin-bottom: 1em; }
@@ -2033,13 +2059,37 @@ footer {
   font-size: 0.75em; }
 
 .projet header {
-  background-color: #ff4200;
+  background: #ff2200 none;
   overflow: hidden; }
   .projet header a {
     color: #f8f9fa; }
     .projet header a:hover {
       color: #151926;
       border-color: #151926; }
+
+.projet.projet-0 header {
+  background: #ff2200 url(./../static/img/hatvp.864c959.jpg) no-repeat center center scroll; }
+
+.projet.projet-1 header {
+  background: #ff2200 url(./../static/img/DCG.c71ff31.jpg) no-repeat center bottom scroll; }
+
+.projet.projet-2 header {
+  background: #ff2200 url(./../static/img/12mars2014.642fe45.jpg) no-repeat center -20px scroll; }
+
+.projet.projet-3 header {
+  background: #ff2200 url(./../static/img/collateralFreedom.4e653f6.jpg) no-repeat center -20px scroll; }
+
+.projet.projet-4 header {
+  background: #ff2200 url(./../static/img/bilans.13b3cd9.jpg) no-repeat center center scroll; }
+
+.projet.projet-5 header {
+  background: #ff2200 url(./../static/img/hefed.a471bde.jpg) no-repeat center bottom scroll; }
+
+.projet.projet-6 header {
+  background: #ff2200 url(./../static/img/logos.930e033.jpg) no-repeat center bottom scroll; }
+
+.projet.projet-7 header {
+  background: #ff2200 url(./../static/img/calumbi.46457da.jpg) no-repeat center -220px scroll; }
 
 .projet h2 {
   margin: 2rem 0 0;
@@ -2057,6 +2107,28 @@ footer {
 .fade-enter, .fade-leave-active {
   opacity: 0; }
 
+.slideTop-enter-active, .fade-leave-active {
+  transition: transform 1s, opacity .5s; }
+
+.slideTop-enter {
+  opacity: 0;
+  transform: translateY(10px); }
+
+.fade-leave-active {
+  opacity: 0;
+  transform: translateY(-10px); }
+
+.slideFromLeft-enter-active, .fade-leave-active {
+  transition: transform .5s, opacity .5s; }
+
+.slideFromLeft-enter {
+  opacity: 0;
+  transform: translateX(-20px); }
+
+.fade-leave-active {
+  opacity: 0;
+  transform: translateX(20px); }
+
 .slide-enter-active {
   transition: transform .3s, opacity .3s, filter .3s; }
 
@@ -2064,14 +2136,14 @@ footer {
   transition: transform .1s, opacity .1s, filter .1s; }
 
 .slide-enter {
-  opacity: .7;
+  opacity: 0;
   filter: blur(0.2px);
-  transform: translate(-1000px); }
+  transform: translateX(200px); }
 
 .slide-leave-active {
-  opacity: .7;
+  opacity: 0;
   filter: blur(0.2px);
-  transform: translate(10px); }
+  transform: translateX(10px); }
 
 .projet-leave-active {
   transition: transform .5s;
@@ -4409,4 +4481,4 @@ footer {
   overflow: visible;
   clip: auto; }
 
-/*# sourceMappingURL=app.431cee26185c86f0995510f496760111.css.map*/
+/*# sourceMappingURL=app.6447fddca3c3313c28dfdfd3abe29f55.css.map*/

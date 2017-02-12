@@ -1,6 +1,6 @@
 <template>
   
-  <div class="projet">
+  <div class="projet" :class="'projet-'+$route.params.id">
 
     <MyHeader></MyHeader>
     
@@ -8,16 +8,16 @@
 
         
           <div class="content" :key="$route.params.id">
-          <div class="grid">
+            <div class="grid">
 
-            <h2 class="five-sixths">{{ portfolio.projets[$route.params.id].name }} </h2>
+              <h2>{{ portfolio.projets[$route.params.id].name }} </h2>
 
-            <NavProjetArrow class="push txtright"></NavProjetArrow>
-          </div>
+              <NavProjetArrow class=" one-sixth push txtright"></NavProjetArrow>
+            </div>
             
 
             <div class="grid has-gutter">
-              <transition name="slide" appear>
+              <transition name="slideTop" appear>
               <div id="metadata" class="one-quarter pbm">
                 <ul>
                   <li v-if="portfolio.projets[$route.params.id].year">
@@ -32,7 +32,7 @@
                   </li>
                   <li v-if="portfolio.projets[$route.params.id].url">
                   <br/>
-                  <a :href="portfolio.projets[$route.params.id].url">Voir le site</a> </li>
+                  <a target="_blank" :href="portfolio.projets[$route.params.id].url">Voir le site</a> </li>
                 </ul>
               </div>
               </transition>
@@ -49,15 +49,21 @@
       
       
     </section><!-- END main -->
-    <section id="images">
-      <div class="content">
-        <div class="grid-3 has-gutter">
-          <div class="img" v-for="image in portfolio.projets[$route.params.id].images" :class="image.size">
-            <img :src="image.path" :alt="image.alt">
+
+    <transition name="slideTop" appear mode="out-in">
+      <section id="images" :key="$route.params.id">
+        <div class="content">
+          <div class="grid-3 has-gutter">
+            <div class="img" v-for="image in portfolio.projets[$route.params.id].images" :class="image.size">
+              
+              <img :src="image.path" :alt="image.alt">
+              
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </transition>
+    
 
     <NavProjet></NavProjet>
     

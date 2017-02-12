@@ -148,37 +148,35 @@ body::selection, body::-moz-selection {
 
  @include respond-to("tiny-up") {
     max-width: $tiny;
-    .illustration {
+    #illustration {
       max-height: ($small * .8)/2;
-      font-size: 6em;
     }
   }
 
   @include respond-to("small-up") {
     max-width: $small;
-    .illustration {
+    #illustration {
       max-height: ($medium * .8)/2;
-      font-size: 8em;
     }
   }
 
   @include respond-to("medium-up") {
     max-width: $medium * .8;
-    .illustration {
+    #illustration {
       max-height: ($medium * .8)/2;
     }
   }
 
   @include respond-to("large-up") {
     max-width: $large * .8;
-    .illustration {
+    #illustration {
       max-height: ($large * .8)/2;
     }
   }
 
   @include respond-to("extra-large-up") {
     max-width: $extra-large * .8;
-    .illustration {
+    #illustration {
       min-height: ($extra-large * .8)/2;
     }
   }
@@ -208,6 +206,14 @@ body::selection, body::-moz-selection {
     }
   }
 
+::selection {
+  background: $base-color;
+  color: #fff;
+}
+::-moz-selection {
+  background: $base-color;
+  color: #fff;
+}
 
 .text {
 
@@ -223,10 +229,26 @@ body::selection, body::-moz-selection {
       } 
     }
 }
-.illustration {
+#illustration {
   background: $color4 none;
   font-weight: bold;
-  font-size: 10em;
+
+  & > div {
+    padding-top: 35%;
+    font-size: 9em; 
+  }
+
+  &.projets div { display: none; }
+
+  &.projet-0 { background: $color4 url('../../../../../static/home-HATVP.jpg') no-repeat center center scroll; }
+  &.projet-1 { background: $color4 url('../../../../../static/home-DCG.jpg') no-repeat center center scroll; }
+  &.projet-2 { background: $color4 url('../../../../../static/home-12mars.jpg') no-repeat center center scroll; }
+  &.projet-3 { background: $color4 url('../../../../../static/home-collateralFreedom.jpg') no-repeat center center scroll; }
+  &.projet-4 { background: $color4 url('../../../../../static/home-Bilans.jpg') no-repeat center center scroll; }
+  &.projet-5 { background: $color4 url('../../../../../static/home-HEFED.jpg') no-repeat center center scroll; }
+  &.projet-6 { background: $color4 url('../../../../../static/home-logos.jpg') no-repeat center center scroll; }
+  &.projet-7 { background: $color4 url('../../../../../static/home-Calumbi.jpg') no-repeat center center scroll; }
+  
 
 }
 
@@ -268,7 +290,7 @@ footer {
 }
 .projet {
   header {
-    background-color: $color4;
+    background: $color4 none;
     overflow: hidden;
 
     a {
@@ -280,6 +302,34 @@ footer {
     }
     
   }
+  &.projet-0 header{
+    background: $color4 url('../../../../../static/hatvp.jpg') no-repeat center center scroll;
+  }
+  &.projet-1 header{
+    background: $color4 url('../../../../../static/DCG.jpg') no-repeat center bottom scroll;
+    
+  }
+  &.projet-2 header{
+    background: $color4 url('../../../../../static/12mars2014.jpg') no-repeat center -20px scroll;
+  }
+  &.projet-3 header{
+    background: $color4 url('../../../../../static/collateralFreedom.jpg') no-repeat center -20px scroll;
+  }
+  &.projet-4 header{
+    background: $color4 url('../../../../../static/bilans.jpg') no-repeat center center scroll;
+  }
+  &.projet-5 header{
+    background: $color4 url('../../../../../static/hefed.jpg') no-repeat center bottom scroll;
+  }
+  &.projet-6 header{
+    background: $color4 url('../../../../../static/logos.jpg') no-repeat center bottom scroll;
+  }
+  &.projet-7 header{
+
+    background: $color4 url('../../../../../static/calumbi.jpg') no-repeat center -220px scroll;
+    
+  }
+
   h2 {
     margin:2rem 0 0;
     padding-bottom: 0;
@@ -302,6 +352,33 @@ footer {
 .fade-enter, .fade-leave-active {
   opacity:0;
 }
+
+
+.slideTop-enter-active, .fade-leave-active {
+  transition: transform 1s, opacity .5s;
+}
+.slideTop-enter {
+  opacity:0;
+  transform: translateY(10px);
+}
+.fade-leave-active {
+  opacity:0;
+  transform: translateY(-10px);
+}
+
+.slideFromLeft-enter-active, .fade-leave-active {
+  transition: transform .5s, opacity .5s;
+}
+.slideFromLeft-enter {
+  opacity:0;
+  transform: translateX(-20px);
+}
+.fade-leave-active {
+  opacity:0;
+  transform: translateX(20px);
+}
+
+
 .slide-enter-active {
   transition: transform .3s, opacity .3s, filter .3s;
 }
@@ -310,15 +387,15 @@ footer {
   transition: transform .1s, opacity .1s, filter .1s;  
 }
 .slide-enter {
-  opacity: .7;
+  opacity: 0;
   filter: blur(.2px);
-  transform: translate(-1000px);
+  transform: translateX(200px);
 }
 
 .slide-leave-active{
-  opacity: .7;
+  opacity: 0;
   filter: blur(.2px);
-  transform: translate(10px);
+  transform: translateX(10px);
 }
 
 

@@ -47,7 +47,7 @@
     },
     {
       "name": "Collateral Freedom",
-      "desc": "À l’occasion de la journée mondiale de lutte contre la cybercensure, RSF lance la deuxième édition de son opération Collateral Freedom et débloque 6 nouveaux sites d’information censurés, les rendant accessibles depuis les territoires où ils sont aujourd’hui prohibés.",
+      "desc": "À l’occasion de la journée mondiale de lutte contre la cybercensure, RSF lance la deuxième édition de son opération Collateral Freedom et débloque 6 nouveaux sites d’informations censurés, les rendant accessibles depuis les territoires où ils sont aujourd’hui prohibés.",
       "client": "RSF",
       "year": "2015",
       "tags": [ "Design graphique", "intégration", "Wordpress", "Multilangue" ],
@@ -77,7 +77,7 @@
     },
     {
       "name": "Site web HEFED",
-      "desc": "",
+      "desc": "Intégration du nouveau site web du groupe HEFED. Thème Wordpress réalisé à partir du 'Starter Theme' _s et du framework css Knacss.",
       "year": "2017",
       "tags": ["Intégration","Wordpress", "KNACSS", "Underscore"],
       "client": "Groupe HEFED",
@@ -90,19 +90,23 @@
       ]
     },
     {
-      "name": "Logos",
-      "desc": "Logotypes",
-      "tags": ["Design graphique"],
+      "name": "Logotypes",
+      "desc": "",
+      "tags": ["Design graphique", "identité visuelle"],
       "url": "",
+      "year": "2011 ~ 2017",
       "images": [
         {"path": "../../static/Logos/logos-pierre-alain-leboucher.png", "alt": "DCG", "size": "one-half"},
-        {"path": "../../static/Logos/logos-pierre-alain-leboucher 3.png", "alt": "DCG", "size": "one-half"},
+        {"path": "../../static/Logos/logos-pierre-alain-leboucher 11.png", "alt": "DCG", "size": "one-half"},
+        {"path": "../../static/Logos/logos-pierre-alain-leboucher 10.png", "alt": "DCG", "size": "full"},
+        
         {"path": "../../static/Logos/logos-pierre-alain-leboucher 4.png", "alt": "DCG", "size": "one-half"},
         {"path": "../../static/Logos/logos-pierre-alain-leboucher 5.png", "alt": "DCG", "size": "one-half"},
         {"path": "../../static/Logos/logos-pierre-alain-leboucher 8.png", "alt": "DCG", "size": "one-half"},
-        {"path": "../../static/Logos/logos-pierre-alain-leboucher 9.png", "alt": "DCG", "size": "one-half"},
-        {"path": "../../static/Logos/logos-pierre-alain-leboucher 10.png", "alt": "DCG", "size": "one-half"},
-        {"path": "../../static/Logos/logos-pierre-alain-leboucher 11.png", "alt": "DCG", "size": "one-half"}
+        {"path": "../../static/Logos/logos-pierre-alain-leboucher 3.png", "alt": "DCG", "size": "one-half"},
+        {"path": "../../static/Logos/logos-pierre-alain-leboucher 9.png", "alt": "DCG", "size": "full"}
+        
+        
       ]
     },
     {
