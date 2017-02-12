@@ -81,44 +81,42 @@ body { background: $base-background none;}
 }
 
 header {
-
-  .content {
-    padding: 4% 0 0;
-	  a, p, h1 {
-		  font-size: 1.2rem;
-		  font-weight: 100;
-      text-decoration: none;	
-      line-height: 1;
-      letter-spacing: 0.15em;
-		}
-    h1, nav a {
-      padding: 13px 15px 12px;
-    }
-    nav {
-      ul {
-        float: right;
-
-      }
-      li {
-        display: inline;
-
-      }
-      a {
-        
-        display: block;
-        float: left;
-        transition: background-color 0.3s;
-        border-bottom: solid 2px transparent;
-
-
-        &:hover {
-          background: #fff none;
-          border-bottom: solid 2px #ff4200;
-        }
-      }
-    }
-		
+  padding: 4% 0 0;
+    
+  a, p, h1 {
+	  font-size: 1.2rem;
+	  font-weight: 100;
+    text-decoration: none;	
+    line-height: 1;
+    letter-spacing: 0.15em;
 	}
+  h1, nav a {
+    padding: 13px 15px 12px;
+  }
+  nav {
+    ul {
+      float: right;
+
+    }
+    li {
+      display: inline;
+
+    }
+    a {
+      
+      display: block;
+      float: left;
+      transition: background-color 0.3s;
+      border-bottom: solid 2px transparent;
+
+
+      &:hover {
+        background: #fff none;
+        border-bottom: solid 2px #ff4200;
+      }
+    }
+  }
+  
 }
 
 body::selection, body::-moz-selection {
@@ -157,7 +155,7 @@ body::selection, body::-moz-selection {
 }
 
 
-.main {  
+#main {  
 
     ul, li {
       list-style: none;
@@ -205,8 +203,20 @@ footer {
 #metadata {
   font-size: 0.75em;
 }
-
-#navProjets {
+.projet {
+  header {
+    background-color: $color4;
+    a {
+      color: $base-background;
+      &:hover {
+        color: $base-color;
+        border-color: $base-color;
+      }
+    }
+    
+  }
+}
+#navProjet {
 
   a {
     text-decoration: none;

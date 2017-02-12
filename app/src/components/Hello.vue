@@ -1,24 +1,30 @@
 <template>
   <div class="hello">
+
     <MyHeader></MyHeader>
-    <transition name="slide" appear>
-      <div class="content main">
 
-        <div class="grid-2">
-          <div class="illustration">
-            
-          </div>
-          <div class="text">
-            <p>Bonjour, je m’appelle Pierre-Alain.<br/>
-  Je suis web-designer et intégrateur.
-  Actuellement en Freelance, je suis ouvert à de nouvelles opportunités.<br/><br/>
+    <section id="main">
+      <div class="content">
+        
+        <transition name="slide" appear>
 
-  J'ai été webmaster & resp. graphisme chez Reporters sans frontières. J'ai aussi travaillé précédemment pour des clients variés tels que la HATVP, ALGECO, l'OKFfr, Mission enfance…</p>
+          <div class="grid-2">
+            <div class="illustration">
+              
+            </div>
+            <div class="text">
+              <p>Bonjour, je m’appelle Pierre-Alain.<br/>
+    Je suis web-designer et intégrateur.
+    Actuellement en Freelance, je suis ouvert à de nouvelles opportunités.<br/><br/>
+
+    J'ai été webmaster & resp. graphisme chez Reporters sans frontières. J'ai aussi travaillé précédemment pour des clients variés tels que la HATVP, ALGECO, l'OKFfr, Mission enfance…</p>
+            </div>
           </div>
-        </div>
+
+        </transition>
       </div>
 
-    </transition>
+    </section>
     <MyFooter></MyFooter>
     
   </div>

@@ -1,37 +1,39 @@
 <template>
   
-    <div class="travaux" >
-      <MyHeader></MyHeader>
+  <div class="travaux" >
+
+    <MyHeader></MyHeader>
+    
+    <section id="main">
+      <div class="content">
       
-      <div class="content main">
-        
-      <transition name="slide" appear>
-        <div class="grid-2">
-          <div class="illustration">
-            
-          </div>
-          <div class="text">
-            <p>Travaux</p>
-
-            <ul>
-              <li v-for="(projet, index) in portfolio.projets">
-                <router-link :to="'/projet/'+index">
-                {{ projet.name }}</router-link>
-
-                <a v-if="projet.url" :href="projet.url"> Visiter le site </a>
-              </li>
-
+        <transition name="slide" appear>
+          <div class="grid-2">
+            <div class="illustration">
               
-              
-            </ul>
+            </div>
+            <div class="text">
+              <p>Travaux</p>
+
+              <ul>
+                <li v-for="(projet, index) in portfolio.projets">
+                  <router-link :to="'/projet/'+index">
+                  {{ projet.name }}</router-link>
+
+                  <a v-if="projet.url" :href="projet.url"> Visiter le site </a>
+                </li>
+
+                
+                
+              </ul>
+            </div>
           </div>
-        </div>
 
-      </transition>
-
-      
-    </div>
+        </transition>
+      </div> <!-- END content -->
+    </section>
     <MyFooter></MyFooter>
+  </div>
   
 </template>
 
