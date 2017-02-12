@@ -1887,26 +1887,26 @@ body {
   min-height: 50vh;
   overflow: hidden; }
 
-header .content {
+header {
   padding: 4% 0 0; }
-  header .content a, header .content p, header .content h1 {
+  header a, header p, header h1 {
     font-size: 1.2rem;
     font-weight: 100;
     text-decoration: none;
     line-height: 1;
     letter-spacing: 0.15em; }
-  header .content h1, header .content nav a {
+  header h1, header nav a {
     padding: 13px 15px 12px; }
-  header .content nav ul {
+  header nav ul {
     float: right; }
-  header .content nav li {
+  header nav li {
     display: inline; }
-  header .content nav a {
+  header nav a {
     display: block;
     float: left;
     transition: background-color 0.3s;
     border-bottom: solid 2px transparent; }
-    header .content nav a:hover {
+    header nav a:hover {
       background: #fff none;
       border-bottom: solid 2px #ff4200; }
 
@@ -1933,12 +1933,12 @@ body::selection, body::-moz-selection {
   .content > * {
     padding: 2rem; }
 
-.main ul, .main li {
+#main ul, #main li {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-.main a {
+#main a {
   text-decoration: none;
   border-bottom: 1px solid #151926;
   padding-bottom: 3px; }
@@ -1971,7 +1971,15 @@ footer {
 #metadata {
   font-size: 0.75em; }
 
-#navProjets a {
+.projet header {
+  background-color: #ff4200; }
+  .projet header a {
+    color: #f8f9fa; }
+    .projet header a:hover {
+      color: #151926;
+      border-color: #151926; }
+
+#navProjet a {
   text-decoration: none; }
 
 .fade-enter-active, .fade-leave-active {
@@ -4332,4 +4340,4 @@ footer {
   overflow: visible;
   clip: auto; }
 
-/*# sourceMappingURL=app.6e913d02b7ac94ac6d0ab0265ebfed40.css.map*/
+/*# sourceMappingURL=app.0668d8d89b4e9bf19b92f12bd32fca08.css.map*/
