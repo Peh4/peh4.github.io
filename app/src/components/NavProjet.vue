@@ -1,5 +1,5 @@
 <template>
-  <nav id="navProjet">
+  <nav class="navProjet">
     <div class="content">
       <div class="grid has-gutter">
         <router-link class="txtleft left"

@@ -8,27 +8,14 @@
       <div class="content">
       
         <transition name="slide" appear>
-          <div class="grid-2">
-            <div class="illustration">
-              
-            </div>
-            <div class="text">
-              <p>Travaux</p>
-
-              <ul>
-                <li v-for="(projet, index) in portfolio.projets">
-                  <router-link :to="'/projet/'+index">
-                  {{ projet.name }}</router-link>
-
-                  <a v-if="projet.url" :href="projet.url"> Visiter le site </a>
-                </li>
-
-                
-                
-              </ul>
-            </div>
+          <div>
+            <ul>
+              <li v-for="(projet, index) in portfolio.projets">
+                <router-link class="grid" :to="'/projet/'+index">
+                <strong class="one-sixth">{{ projet.client }}</strong> <div class="one-half">{{ projet.name }}</div> <div><span v-for="tag in projet.tags">{{ tag }},</span></div></router-link>
+              </li>
+            </ul>
           </div>
-
         </transition>
       </div> <!-- END content -->
     </section>

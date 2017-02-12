@@ -5,38 +5,46 @@
     <MyHeader></MyHeader>
     
     <section id="main">
-      <div class="content">
 
-        <transition name="slide" appear>
+        
           <div class="content" :key="$route.params.id">
-            <h2>{{ portfolio.projets[$route.params.id].name }}</h2>
+          <div class="grid">
+
+            <h2 class="five-sixths">{{ portfolio.projets[$route.params.id].name }} </h2>
+
+            <NavProjetArrow class="push txtright"></NavProjetArrow>
+          </div>
+            
+
             <div class="grid has-gutter">
-              <div id="metadata" class="one-quarter">
+              <transition name="slide" appear>
+              <div id="metadata" class="one-quarter pbm">
                 <ul>
                   <li v-if="portfolio.projets[$route.params.id].year">
-                    {{ portfolio.projets[$route.params.id].year }}
-                    <br/>
-                    -
+                    <strong>{{ portfolio.projets[$route.params.id].year }}</strong>
+                    <br/><br/>
                   </li>
                   <li v-for="tag in portfolio.projets[$route.params.id].tags">{{ tag }}</li>
                   
                   <li v-if="portfolio.projets[$route.params.id].client">
-                    -<br/>
-                    Client : {{ portfolio.projets[$route.params.id].client }}
+                    <br/>
+                    Client : <i>{{ portfolio.projets[$route.params.id].client }}</i>
                   </li>
                   <li v-if="portfolio.projets[$route.params.id].url">
-                  -<br/>
+                  <br/>
                   <a :href="portfolio.projets[$route.params.id].url">Voir le site</a> </li>
-                  <li></li>
                 </ul>
               </div>
-              <div class="two-thirds">
+              </transition>
+              <transition name="slide" appear>
+              <div class="two-thirds text pbm">
                 {{ portfolio.projets[$route.params.id].desc }}
               </div>
+              </transition>
+              
             </div> <!-- END grid -->
           </div> <!-- END content -->
         </transition>
-      </div>
 
       
       
@@ -63,6 +71,7 @@
 import MyHeader from './MyHeader.vue'
 import MyFooter from './MyFooter.vue'
 import NavProjet from './NavProjet.vue'
+import NavProjetArrow from './NavProjetArrow.vue'
 import Portfolio from '../assets/portfolio.json'
 
 export default {
@@ -76,7 +85,8 @@ export default {
   components: {
     MyHeader,
     MyFooter,
-    NavProjet
+    NavProjet,
+    NavProjetArrow
   },
   methods: {
     scroll: function (event) {

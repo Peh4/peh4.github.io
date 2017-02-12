@@ -65,9 +65,20 @@
 // You can also link them with a Sass @import
 // @import "my-styles";
 
+@include font-face("AG",'../../../../../static/Fonts/AGBk', normal, normal);
+@include font-face("AG",'../../../../../static/Fonts/AGBkObl',normal, italic);
+@include font-face("AG",'../../../../../static/Fonts/AGBold', bold, normal);
+@include font-face("AG",'../../../../../static/Fonts/AGBoldObl', bold, italic);
+
+@include font-face("Sy",'../../../../../static/Fonts/SyMediumItalic');
+@include font-face("Sy",'../../../../../static/Fonts/SyBoldItalic', bold);
+
 $background : #f8f9fa;
 
-body { background: $base-background none;}
+body { 
+  background: $base-background none;
+  font-family: "AG";
+}
 
 #app {
 
@@ -82,6 +93,10 @@ body { background: $base-background none;}
 
 header {
   padding: 4% 0 0;
+
+  h1 a{
+    font-weight: bold;
+  }
     
   a, p, h1 {
 	  font-size: 1.2rem;
@@ -89,8 +104,10 @@ header {
     text-decoration: none;	
     line-height: 1;
     letter-spacing: 0.15em;
+    margin: 0;
+    padding: 0; 
 	}
-  h1, nav a {
+  nav a {
     padding: 13px 15px 12px;
   }
   nav {
@@ -131,28 +148,48 @@ body::selection, body::-moz-selection {
 
  @include respond-to("tiny-up") {
     max-width: $tiny;
+    .illustration {
+      max-height: ($small * .8)/2;
+      font-size: 6em;
+    }
   }
 
   @include respond-to("small-up") {
     max-width: $small;
+    .illustration {
+      max-height: ($medium * .8)/2;
+      font-size: 8em;
+    }
   }
 
   @include respond-to("medium-up") {
     max-width: $medium * .8;
+    .illustration {
+      max-height: ($medium * .8)/2;
+    }
   }
 
   @include respond-to("large-up") {
     max-width: $large * .8;
+    .illustration {
+      max-height: ($large * .8)/2;
+    }
   }
 
   @include respond-to("extra-large-up") {
     max-width: $extra-large * .8;
+    .illustration {
+      min-height: ($extra-large * .8)/2;
+    }
   }
 
   & > * {
     padding: 2rem;	
   }
 }
+
+
+
 
 
 #main {  
@@ -162,6 +199,7 @@ body::selection, body::-moz-selection {
       padding: 0;
       margin: 0;
     }
+    
     a {
       text-decoration: none;
       border-bottom: 1px solid $base-color;
@@ -169,19 +207,44 @@ body::selection, body::-moz-selection {
 
     }
   }
+
+
 .text {
 
-  background: $second-background none;  
-  font-family: serif;
-  font-size: 1.8rem;
+  font-family: "Sy";
+  font-size: 1.65rem;
   font-weight: 100;
   text-decoration: none;  
-  line-height: 1;
-  letter-spacing: 0.05em;
-  padding: 75px 40px 0 45px;  
+  li {
+      margin-bottom: 8px !important;
+      &::before {
+        content: "\f054";
+        font-family: FontAwesome;
+      } 
+    }
 }
 .illustration {
   background: $color4 none;
+  font-weight: bold;
+  font-size: 10em;
+
+}
+
+.hello {
+  .text {
+  }
+  .listProjet {
+    margin-bottom: 1em;
+  }
+}
+
+.travaux {
+  span {
+    font-size: 0.75em;
+    padding: 0 0.5em;
+    font-family: "Sy";
+
+  }
 }
 
 #images {
@@ -206,6 +269,8 @@ footer {
 .projet {
   header {
     background-color: $color4;
+    overflow: hidden;
+
     a {
       color: $base-background;
       &:hover {
@@ -215,11 +280,18 @@ footer {
     }
     
   }
+  h2 {
+    margin:2rem 0 0;
+    padding-bottom: 0;
+    letter-spacing: 0.05em;
+  }
 }
-#navProjet {
+.navProjet, .navProjetArrow  {
 
   a {
     text-decoration: none;
+    border: none!important;
+    font-weight: bold;
   }
   
 }
@@ -257,6 +329,7 @@ footer {
 .projet-leave-active {
   transform: translate(0,-535px) scale(3);
 }
+
 
 
 

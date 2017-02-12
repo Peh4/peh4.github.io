@@ -6,7 +6,7 @@ Vue.use(Router)
 import Hello from 'components/Hello'
 import Projet from 'components/Projet'
 import Contact from 'components/Contact'
-import Travaux from 'components/Travaux'
+// import Travaux from 'components/Travaux'
 
 export default new Router({
   routes: [
@@ -15,10 +15,10 @@ export default new Router({
       name: 'Hello',
       component: Hello
     },
-    { path: '/travaux',
-      name: 'Travaux',
-      component: Travaux
-    },
+    // { path: '/travaux',
+    //   name: 'Travaux',
+    //   component: Travaux
+    // },
     { path: '/projet/:id',
       name: 'Projet',
       component: Projet

@@ -1880,8 +1880,42 @@ ul.unstyled {
 /* ==Own stylesheet              */
 /* ----------------------------- */
 /* Here should go your own CSS styles */
+@font-face {
+  font-family: "AG";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./../static/fonts/AGBk.3f10f08.eot) format("eot"), url(./../static/fonts/AGBk.6584acd.woff2) format("woff2"), url(./../static/fonts/AGBk.f537aa2.woff) format("woff"), url(./../static/fonts/AGBk.e9816da.ttf) format("truetype"), url(./../static/img/AGBk.227ed07.svg#AG) format("svg"); }
+
+@font-face {
+  font-family: "AG";
+  font-style: italic;
+  font-weight: normal;
+  src: url(./../static/fonts/AGBkObl.2d6149a.eot) format("eot"), url(./../static/fonts/AGBkObl.ccec654.woff2) format("woff2"), url(./../static/fonts/AGBkObl.6f6244b.woff) format("woff"), url(./../static/fonts/AGBkObl.9c2c2a4.ttf) format("truetype"), url(./../static/img/AGBkObl.e171d00.svg#AG) format("svg"); }
+
+@font-face {
+  font-family: "AG";
+  font-style: normal;
+  font-weight: bold;
+  src: url(./../static/fonts/AGBold.ea55d3f.eot) format("eot"), url(./../static/fonts/AGBold.dab90ff.woff2) format("woff2"), url(./../static/fonts/AGBold.5c5d62a.woff) format("woff"), url(./../static/fonts/AGBold.ca17e6f.ttf) format("truetype"), url(./../static/img/AGBold.9b21597.svg#AG) format("svg"); }
+
+@font-face {
+  font-family: "AG";
+  font-style: italic;
+  font-weight: bold;
+  src: url(./../static/fonts/AGBoldObl.7364371.eot) format("eot"), url(./../static/fonts/AGBoldObl.da25c7a.woff2) format("woff2"), url(./../static/fonts/AGBoldObl.165bb64.woff) format("woff"), url(./../static/fonts/AGBoldObl.ecd159b.ttf) format("truetype"), url(./../static/img/AGBoldObl.f512339.svg#AG) format("svg"); }
+
+@font-face {
+  font-family: "Sy";
+  src: url(./../static/fonts/SyMediumItalic.1b74cdc.eot) format("eot"), url(./../static/fonts/SyMediumItalic.0d6f229.woff2) format("woff2"), url(./../static/fonts/SyMediumItalic.daa227b.woff) format("woff"), url(./../static/fonts/SyMediumItalic.2847813.ttf) format("truetype"), url(./../static/img/SyMediumItalic.75aaba1.svg#Sy) format("svg"); }
+
+@font-face {
+  font-family: "Sy";
+  font-weight: bold;
+  src: url(./../static/fonts/SyBoldItalic.69f3a2b.eot) format("eot"), url(./../static/fonts/SyBoldItalic.d10c0fa.woff2) format("woff2"), url(./../static/fonts/SyBoldItalic.ee82afa.woff) format("woff"), url(./../static/fonts/SyBoldItalic.961283d.ttf) format("truetype"), url(./../static/img/SyBoldItalic.df93acc.svg#Sy) format("svg"); }
+
 body {
-  background: #f8f9fa none; }
+  background: #f8f9fa none;
+  font-family: "AG"; }
 
 #app > div {
   min-height: 50vh;
@@ -1889,13 +1923,17 @@ body {
 
 header {
   padding: 4% 0 0; }
+  header h1 a {
+    font-weight: bold; }
   header a, header p, header h1 {
     font-size: 1.2rem;
     font-weight: 100;
     text-decoration: none;
     line-height: 1;
-    letter-spacing: 0.15em; }
-  header h1, header nav a {
+    letter-spacing: 0.15em;
+    margin: 0;
+    padding: 0; }
+  header nav a {
     padding: 13px 15px 12px; }
   header nav ul {
     float: right; }
@@ -1917,19 +1955,31 @@ body::selection, body::-moz-selection {
   margin: 0 auto; }
   @media screen and (min-width: 544px) {
     .content {
-      max-width: 543px; } }
+      max-width: 543px; }
+      .content .illustration {
+        max-height: 306.8px;
+        font-size: 6em; } }
   @media screen and (min-width: 768px) {
     .content {
-      max-width: 767px; } }
+      max-width: 767px; }
+      .content .illustration {
+        max-height: 396.4px;
+        font-size: 8em; } }
   @media screen and (min-width: 992px) {
     .content {
-      max-width: 792.8px; } }
+      max-width: 792.8px; }
+      .content .illustration {
+        max-height: 396.4px; } }
   @media screen and (min-width: 1200px) {
     .content {
-      max-width: 959.2px; } }
+      max-width: 959.2px; }
+      .content .illustration {
+        max-height: 479.6px; } }
   @media screen and (min-width: 1440px) {
     .content {
-      max-width: 1151.2px; } }
+      max-width: 1151.2px; }
+      .content .illustration {
+        min-height: 575.6px; } }
   .content > * {
     padding: 2rem; }
 
@@ -1944,17 +1994,28 @@ body::selection, body::-moz-selection {
   padding-bottom: 3px; }
 
 .text {
-  background: #f9e7e1 none;
-  font-family: serif;
-  font-size: 1.8rem;
+  font-family: "Sy";
+  font-size: 1.65rem;
   font-weight: 100;
-  text-decoration: none;
-  line-height: 1;
-  letter-spacing: 0.05em;
-  padding: 75px 40px 0 45px; }
+  text-decoration: none; }
+  .text li {
+    margin-bottom: 8px !important; }
+    .text li::before {
+      content: "\F054";
+      font-family: FontAwesome; }
 
 .illustration {
-  background: #ff4200 none; }
+  background: #ff4200 none;
+  font-weight: bold;
+  font-size: 10em; }
+
+.hello .listProjet {
+  margin-bottom: 1em; }
+
+.travaux span {
+  font-size: 0.75em;
+  padding: 0 0.5em;
+  font-family: "Sy"; }
 
 #images {
   background: #f9e7e1 none; }
@@ -1972,15 +2033,23 @@ footer {
   font-size: 0.75em; }
 
 .projet header {
-  background-color: #ff4200; }
+  background-color: #ff4200;
+  overflow: hidden; }
   .projet header a {
     color: #f8f9fa; }
     .projet header a:hover {
       color: #151926;
       border-color: #151926; }
 
-#navProjet a {
-  text-decoration: none; }
+.projet h2 {
+  margin: 2rem 0 0;
+  padding-bottom: 0;
+  letter-spacing: 0.05em; }
+
+.navProjet a, .navProjetArrow a {
+  text-decoration: none;
+  border: none !important;
+  font-weight: bold; }
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s; }
@@ -4340,4 +4409,4 @@ footer {
   overflow: visible;
   clip: auto; }
 
-/*# sourceMappingURL=app.0668d8d89b4e9bf19b92f12bd32fca08.css.map*/
+/*# sourceMappingURL=app.431cee26185c86f0995510f496760111.css.map*/

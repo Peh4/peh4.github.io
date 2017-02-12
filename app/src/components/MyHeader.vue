@@ -1,14 +1,16 @@
 <template>
   <header id="header">
-    <div class="content grid-2">
-      <div class="title">
+    <div class="content">
+      <div class="grid-3 has-gutter">
         <h1><router-link to="/">{{ msg }}</router-link></h1>
+        <nav class="two-thirds">
+          <ul>
+            <li><router-link to="/">Accueil</router-link></li>
+            <li><router-link to="/projet/0">Projets</router-link></li>
+            <li><router-link to="/contact">Contact</router-link></li>
+          </ul>
+        </nav>
       </div>
-      <nav><ul>
-        <li><router-link to="/">Profil</router-link></li>
-        <li><router-link to="/travaux">Travaux</router-link></li>
-        <li><router-link to="/contact">Contact</router-link></li>
-      </ul></nav>
     </div>
   </header>
 </template>
