@@ -8,7 +8,7 @@
 
         
           <div class="content" :key="$route.params.id">
-            <div class="grid">
+            <div class="grid-2-small-1">
 
               <h2>{{ portfolio.projets[$route.params.id].name }} </h2>
 
