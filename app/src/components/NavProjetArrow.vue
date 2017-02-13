@@ -4,7 +4,7 @@
       <div class="grid has-gutter">
         <router-link class="txtleft left"
           v-if="$route.params.id > 0" 
-          :to="'/projet/'+($route.params.id-1)"> <i class="fa fa-chevron-left" aria-hidden="true"></i> Prec.
+          :to="'/projet/'+($route.params.id-1)"> <i class="fa fa-chevron-left" aria-hidden="true"></i> Préc.
         </router-link>
         <div v-else></div>
         
