@@ -346,6 +346,26 @@ footer {
   
 }
 
+.contact {
+  #illustration {
+    position: relative;
+  
+    div {
+      background: blue;
+      padding: 0;
+      border-radius: 100px;
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+     margin: -100px 0 0 -100px;
+
+      top:50%;
+      left:50%;
+      position: relative;
+    }
+  }
+}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }

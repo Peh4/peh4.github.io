@@ -4,21 +4,28 @@
    
     <MyHeader></MyHeader>
     
-      <div class="content main">
-        <transition name="slide" appear>
-        <div class="grid-2">
-          <div class="illustration">
-            
-          </div>
-          <div class="text">
-          <p>Pierre-Alain Leboucher<br>
-          pierrealainleboucher@gmail.com<br>
-          06 86 68 43 46</p>
-          </div>
-        </div>
-        </transition>
+    <section id="main">
+      <div class="content">
+        
+        
 
+          <div class="grid-2">
+            <transition name="slideFromLeft" appear>
+              <div id="illustration" class="txtcenter">
+              </div>
+            </transition>
+            <transition name="slideTop" appear>
+              <div class="text pal">
+                <p>Pierre-Alain Leboucher<br>
+          pierrealainleboucher@gmail.com<br>
+          06 86 68 43 46
+                </p>
+              </div>
+            </transition>
+          </div>
       </div>
+
+    </section>
     
     <MyFooter></MyFooter>
     

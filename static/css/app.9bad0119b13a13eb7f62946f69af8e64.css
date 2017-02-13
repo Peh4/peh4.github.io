@@ -1884,34 +1884,34 @@ ul.unstyled {
   font-family: "AG";
   font-style: normal;
   font-weight: normal;
-  src: url(./../static/fonts/AGBk.3f10f08.eot) format("eot"), url(./../static/fonts/AGBk.6584acd.woff2) format("woff2"), url(./../static/fonts/AGBk.f537aa2.woff) format("woff"), url(./../static/fonts/AGBk.e9816da.ttf) format("truetype"), url(./../static/img/AGBk.227ed07.svg#AG) format("svg"); }
+  src: url(/static/fonts/AGBk.3f10f08.eot) format("eot"), url(/static/fonts/AGBk.6584acd.woff2) format("woff2"), url(/static/fonts/AGBk.f537aa2.woff) format("woff"), url(/static/fonts/AGBk.e9816da.ttf) format("truetype"), url(/static/img/AGBk.227ed07.svg#AG) format("svg"); }
 
 @font-face {
   font-family: "AG";
   font-style: italic;
   font-weight: normal;
-  src: url(./../static/fonts/AGBkObl.2d6149a.eot) format("eot"), url(./../static/fonts/AGBkObl.ccec654.woff2) format("woff2"), url(./../static/fonts/AGBkObl.6f6244b.woff) format("woff"), url(./../static/fonts/AGBkObl.9c2c2a4.ttf) format("truetype"), url(./../static/img/AGBkObl.e171d00.svg#AG) format("svg"); }
+  src: url(/static/fonts/AGBkObl.2d6149a.eot) format("eot"), url(/static/fonts/AGBkObl.ccec654.woff2) format("woff2"), url(/static/fonts/AGBkObl.6f6244b.woff) format("woff"), url(/static/fonts/AGBkObl.9c2c2a4.ttf) format("truetype"), url(/static/img/AGBkObl.e171d00.svg#AG) format("svg"); }
 
 @font-face {
   font-family: "AG";
   font-style: normal;
   font-weight: bold;
-  src: url(./../static/fonts/AGBold.ea55d3f.eot) format("eot"), url(./../static/fonts/AGBold.dab90ff.woff2) format("woff2"), url(./../static/fonts/AGBold.5c5d62a.woff) format("woff"), url(./../static/fonts/AGBold.ca17e6f.ttf) format("truetype"), url(./../static/img/AGBold.9b21597.svg#AG) format("svg"); }
+  src: url(/static/fonts/AGBold.ea55d3f.eot) format("eot"), url(/static/fonts/AGBold.dab90ff.woff2) format("woff2"), url(/static/fonts/AGBold.5c5d62a.woff) format("woff"), url(/static/fonts/AGBold.ca17e6f.ttf) format("truetype"), url(/static/img/AGBold.9b21597.svg#AG) format("svg"); }
 
 @font-face {
   font-family: "AG";
   font-style: italic;
   font-weight: bold;
-  src: url(./../static/fonts/AGBoldObl.7364371.eot) format("eot"), url(./../static/fonts/AGBoldObl.da25c7a.woff2) format("woff2"), url(./../static/fonts/AGBoldObl.165bb64.woff) format("woff"), url(./../static/fonts/AGBoldObl.ecd159b.ttf) format("truetype"), url(./../static/img/AGBoldObl.f512339.svg#AG) format("svg"); }
+  src: url(/static/fonts/AGBoldObl.7364371.eot) format("eot"), url(/static/fonts/AGBoldObl.da25c7a.woff2) format("woff2"), url(/static/fonts/AGBoldObl.165bb64.woff) format("woff"), url(/static/fonts/AGBoldObl.ecd159b.ttf) format("truetype"), url(/static/img/AGBoldObl.f512339.svg#AG) format("svg"); }
 
 @font-face {
   font-family: "Sy";
-  src: url(./../static/fonts/SyMediumItalic.1b74cdc.eot) format("eot"), url(./../static/fonts/SyMediumItalic.0d6f229.woff2) format("woff2"), url(./../static/fonts/SyMediumItalic.daa227b.woff) format("woff"), url(./../static/fonts/SyMediumItalic.2847813.ttf) format("truetype"), url(./../static/img/SyMediumItalic.75aaba1.svg#Sy) format("svg"); }
+  src: url(/static/fonts/SyMediumItalic.1b74cdc.eot) format("eot"), url(/static/fonts/SyMediumItalic.0d6f229.woff2) format("woff2"), url(/static/fonts/SyMediumItalic.daa227b.woff) format("woff"), url(/static/fonts/SyMediumItalic.2847813.ttf) format("truetype"), url(/static/img/SyMediumItalic.75aaba1.svg#Sy) format("svg"); }
 
 @font-face {
   font-family: "Sy";
   font-weight: bold;
-  src: url(./../static/fonts/SyBoldItalic.69f3a2b.eot) format("eot"), url(./../static/fonts/SyBoldItalic.d10c0fa.woff2) format("woff2"), url(./../static/fonts/SyBoldItalic.ee82afa.woff) format("woff"), url(./../static/fonts/SyBoldItalic.961283d.ttf) format("truetype"), url(./../static/img/SyBoldItalic.df93acc.svg#Sy) format("svg"); }
+  src: url(/static/fonts/SyBoldItalic.69f3a2b.eot) format("eot"), url(/static/fonts/SyBoldItalic.d10c0fa.woff2) format("woff2"), url(/static/fonts/SyBoldItalic.ee82afa.woff) format("woff"), url(/static/fonts/SyBoldItalic.961283d.ttf) format("truetype"), url(/static/img/SyBoldItalic.df93acc.svg#Sy) format("svg"); }
 
 body {
   background: #f8f9fa none;
@@ -2019,21 +2019,21 @@ body::selection, body::-moz-selection {
   #illustration.projets div {
     display: none; }
   #illustration.projet-0 {
-    background: #ff2200 url(./../static/img/home-HATVP.8fbc717.jpg) no-repeat center center scroll; }
+    background: #ff2200 url(/static/img/home-HATVP.8fbc717.jpg) no-repeat center center scroll; }
   #illustration.projet-1 {
-    background: #ff2200 url(./../static/img/home-DCG.67e5841.jpg) no-repeat center center scroll; }
+    background: #ff2200 url(/static/img/home-DCG.67e5841.jpg) no-repeat center center scroll; }
   #illustration.projet-2 {
-    background: #ff2200 url(./../static/img/home-12mars.bff24e5.jpg) no-repeat center center scroll; }
+    background: #ff2200 url(/static/img/home-12mars.bff24e5.jpg) no-repeat center center scroll; }
   #illustration.projet-3 {
-    background: #ff2200 url(./../static/img/home-collateralFreedom.dbf1f6b.jpg) no-repeat center center scroll; }
+    background: #ff2200 url(/static/img/home-collateralFreedom.dbf1f6b.jpg) no-repeat center center scroll; }
   #illustration.projet-4 {
-    background: #ff2200 url(./../static/img/home-Bilans.5ff45da.jpg) no-repeat center center scroll; }
+    background: #ff2200 url(/static/img/home-Bilans.5ff45da.jpg) no-repeat center center scroll; }
   #illustration.projet-5 {
-    background: #ff2200 url(./../static/img/home-HEFED.acb0560.jpg) no-repeat center center scroll; }
+    background: #ff2200 url(/static/img/home-HEFED.acb0560.jpg) no-repeat center center scroll; }
   #illustration.projet-6 {
-    background: #ff2200 url(./../static/img/home-logos.f334672.jpg) no-repeat center center scroll; }
+    background: #ff2200 url(/static/img/home-logos.f334672.jpg) no-repeat center center scroll; }
   #illustration.projet-7 {
-    background: #ff2200 url(./../static/img/home-Calumbi.e92075e.jpg) no-repeat center center scroll; }
+    background: #ff2200 url(/static/img/home-Calumbi.e92075e.jpg) no-repeat center center scroll; }
 
 .hello .listProjet {
   margin-bottom: 1em; }
@@ -2068,28 +2068,28 @@ footer {
       border-color: #151926; }
 
 .projet.projet-0 header {
-  background: #ff2200 url(./../static/img/hatvp.864c959.jpg) no-repeat center center scroll; }
+  background: #ff2200 url(/static/img/hatvp.864c959.jpg) no-repeat center center scroll; }
 
 .projet.projet-1 header {
-  background: #ff2200 url(./../static/img/DCG.c71ff31.jpg) no-repeat center bottom scroll; }
+  background: #ff2200 url(/static/img/DCG.c71ff31.jpg) no-repeat center bottom scroll; }
 
 .projet.projet-2 header {
-  background: #ff2200 url(./../static/img/12mars2014.642fe45.jpg) no-repeat center -20px scroll; }
+  background: #ff2200 url(/static/img/12mars2014.642fe45.jpg) no-repeat center -20px scroll; }
 
 .projet.projet-3 header {
-  background: #ff2200 url(./../static/img/collateralFreedom.4e653f6.jpg) no-repeat center -20px scroll; }
+  background: #ff2200 url(/static/img/collateralFreedom.4e653f6.jpg) no-repeat center -20px scroll; }
 
 .projet.projet-4 header {
-  background: #ff2200 url(./../static/img/bilans.13b3cd9.jpg) no-repeat center center scroll; }
+  background: #ff2200 url(/static/img/bilans.13b3cd9.jpg) no-repeat center center scroll; }
 
 .projet.projet-5 header {
-  background: #ff2200 url(./../static/img/hefed.a471bde.jpg) no-repeat center bottom scroll; }
+  background: #ff2200 url(/static/img/hefed.a471bde.jpg) no-repeat center bottom scroll; }
 
 .projet.projet-6 header {
-  background: #ff2200 url(./../static/img/logos.930e033.jpg) no-repeat center bottom scroll; }
+  background: #ff2200 url(/static/img/logos.930e033.jpg) no-repeat center bottom scroll; }
 
 .projet.projet-7 header {
-  background: #ff2200 url(./../static/img/calumbi.46457da.jpg) no-repeat center -220px scroll; }
+  background: #ff2200 url(/static/img/calumbi.46457da.jpg) no-repeat center -220px scroll; }
 
 .projet h2 {
   margin: 2rem 0 0;
@@ -2100,6 +2100,20 @@ footer {
   text-decoration: none;
   border: none !important;
   font-weight: bold; }
+
+.contact #illustration {
+  position: relative; }
+  .contact #illustration div {
+    background: blue;
+    padding: 0;
+    border-radius: 100px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    top: 50%;
+    left: 50%;
+    position: relative; }
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s; }
@@ -2160,8 +2174,8 @@ footer {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(./../static/fonts/fontawesome-webfont.674f50d.eot);
-  src: url(./../static/fonts/fontawesome-webfont.674f50d.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(./../static/fonts/fontawesome-webfont.af7ae50.woff2) format("woff2"), url(./../static/fonts/fontawesome-webfont.fee66e7.woff) format("woff"), url(./../static/fonts/fontawesome-webfont.b06871f.ttf) format("truetype"), url(./../static/img/fontawesome-webfont.912ec66.svg#fontawesomeregular) format("svg");
+  src: url(/static/fonts/fontawesome-webfont.674f50d.eot);
+  src: url(/static/fonts/fontawesome-webfont.674f50d.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/static/fonts/fontawesome-webfont.af7ae50.woff2) format("woff2"), url(/static/fonts/fontawesome-webfont.fee66e7.woff) format("woff"), url(/static/fonts/fontawesome-webfont.b06871f.ttf) format("truetype"), url(/static/img/fontawesome-webfont.912ec66.svg#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -4481,4 +4495,4 @@ footer {
   overflow: visible;
   clip: auto; }
 
-/*# sourceMappingURL=app.6447fddca3c3313c28dfdfd3abe29f55.css.map*/
+/*# sourceMappingURL=app.9bad0119b13a13eb7f62946f69af8e64.css.map*/
