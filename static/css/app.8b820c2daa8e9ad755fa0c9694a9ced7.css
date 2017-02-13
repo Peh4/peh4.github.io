@@ -2068,28 +2068,28 @@ footer {
       border-color: #151926; }
 
 .projet.projet-0 header {
-  background: #ff4200 url(/static/img/hatvp.5dd3275.jpg) no-repeat center center scroll; }
+  background: #ff4200 url(/static/img/hatvp.5dd3275.jpg) no-repeat center -140px fixed; }
 
 .projet.projet-1 header {
-  background: #ff4200 url(/static/img/DCG.58f82ff.jpg) no-repeat center bottom scroll; }
+  background: #ff4200 url(/static/img/DCG.58f82ff.jpg) no-repeat center -90px fixed; }
 
 .projet.projet-2 header {
-  background: #ff4200 url(/static/img/12mars2014.774b081.jpg) no-repeat center -20px scroll; }
+  background: #ff4200 url(/static/img/12mars2014.774b081.jpg) no-repeat center -20px fixed; }
 
 .projet.projet-3 header {
-  background: #ff4200 url(/static/img/collateralFreedom.b31e04a.jpg) no-repeat center -20px scroll; }
+  background: #ff4200 url(/static/img/collateralFreedom.b31e04a.jpg) no-repeat center -120px fixed; }
 
 .projet.projet-4 header {
-  background: #ff4200 url(/static/img/bilans.44fb7ea.jpg) no-repeat center center scroll; }
+  background: #ff4200 url(/static/img/bilans.44fb7ea.jpg) no-repeat center -110px fixed; }
 
 .projet.projet-5 header {
-  background: #ff4200 url(/static/img/hefed.28976c5.jpg) no-repeat center bottom scroll; }
+  background: #ff4200 url(/static/img/hefed.28976c5.jpg) no-repeat center -250px fixed; }
 
 .projet.projet-6 header {
-  background: #ff4200 url(/static/img/logos.ac522e0.jpg) no-repeat center bottom scroll; }
+  background: #ff4200 url(/static/img/logos.ac522e0.jpg) no-repeat center -150px fixed; }
 
 .projet.projet-7 header {
-  background: #ff4200 url(/static/img/calumbi.e9ee559.jpg) no-repeat center -220px scroll; }
+  background: #ff4200 url(/static/img/calumbi.e9ee559.jpg) no-repeat center -200px fixed; }
 
 .projet h2 {
   margin: 2rem 0 0;
@@ -4495,4 +4495,4 @@ footer {
   overflow: visible;
   clip: auto; }
 
-/*# sourceMappingURL=app.d073ac79e4e517383c439e28f07b80cc.css.map*/
+/*# sourceMappingURL=app.8b820c2daa8e9ad755fa0c9694a9ced7.css.map*/
