@@ -2,7 +2,7 @@
   "projets": [
     {
       "name": "HATVP",
-      "desc": "La HATVP est une haute autoritée créée le 11 octobre 2013 pour favoriser la transparence de la vie publique. J'ai travaillé sur l'intégration du site de télédéclaration qui permet aux élus de faire leur déclaration de patrimoine. ",
+      "desc": "La HATVP est une autorité administrative indépendante créée le 11 octobre 2013 pour favoriser la transparence de la vie publique. J'ai travaillé sur l'intégration du site de télédéclaration qui permet aux responsables publics de faire leur déclaration de patrimoine et d’intérêts.",
       "tags": [ "Intégration", "html / css / js", "Angular" ],
       "client": "HATVP",
       "year": "2016",
