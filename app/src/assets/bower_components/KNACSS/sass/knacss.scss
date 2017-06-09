@@ -240,14 +240,15 @@ body::selection, body::-moz-selection {
 
   &.projets div { display: none; }
 
-  &.projet-0 { background: $color4 url('../../../../../static/home-HATVP.jpg') no-repeat center center scroll; }
-  &.projet-1 { background: $color4 url('../../../../../static/home-DCG.jpg') no-repeat center center scroll; }
-  &.projet-2 { background: $color4 url('../../../../../static/home-12mars.jpg') no-repeat center center scroll; }
-  &.projet-3 { background: $color4 url('../../../../../static/home-collateralFreedom.jpg') no-repeat center center scroll; }
-  &.projet-4 { background: $color4 url('../../../../../static/home-Bilans.jpg') no-repeat center center scroll; }
-  &.projet-5 { background: $color4 url('../../../../../static/home-HEFED.jpg') no-repeat center center scroll; }
-  &.projet-6 { background: $color4 url('../../../../../static/home-logos.jpg') no-repeat center center scroll; }
-  &.projet-7 { background: $color4 url('../../../../../static/home-Calumbi.jpg') no-repeat center center scroll; }
+  &.projet-0 { background: $color4 url('../../../../../static/home-7paradoxes.jpg') no-repeat center center scroll; }
+  &.projet-1 { background: $color4 url('../../../../../static/home-HATVP.jpg') no-repeat center center scroll; }
+  &.projet-2 { background: $color4 url('../../../../../static/home-DCG.jpg') no-repeat center center scroll; }
+  &.projet-3 { background: $color4 url('../../../../../static/home-12mars.jpg') no-repeat center center scroll; }
+  &.projet-4 { background: $color4 url('../../../../../static/home-collateralFreedom.jpg') no-repeat center center scroll; }
+  &.projet-5 { background: $color4 url('../../../../../static/home-Bilans.jpg') no-repeat center center scroll; }
+  &.projet-6 { background: $color4 url('../../../../../static/home-HEFED.jpg') no-repeat center center scroll; }
+  &.projet-7 { background: $color4 url('../../../../../static/home-logos.jpg') no-repeat center center scroll; }
+  &.projet-8 { background: $color4 url('../../../../../static/home-Calumbi.jpg') no-repeat center center scroll; }
   
 
 }
@@ -303,31 +304,32 @@ footer {
     
   }
   &.projet-0 header{
-    background: $color4 url('../../../../../static/hatvp.jpg') no-repeat center -140px fixed;
+    background: $color4 url('../../../../../static/7paradoxes.jpg') no-repeat center -225px fixed;
   }
   &.projet-1 header{
+    background: $color4 url('../../../../../static/hatvp.jpg') no-repeat center -140px fixed;
+  }
+  &.projet-2 header{
     background: $color4 url('../../../../../static/DCG.jpg') no-repeat center -90px fixed;
     
   }
-  &.projet-2 header{
+  &.projet-3 header{
     background: $color4 url('../../../../../static/12mars2014.jpg') no-repeat center -20px fixed;
   }
-  &.projet-3 header{
+  &.projet-4 header{
     background: $color4 url('../../../../../static/collateralFreedom.jpg') no-repeat center -120px fixed;
   }
-  &.projet-4 header{
+  &.projet-5 header{
     background: $color4 url('../../../../../static/bilans.jpg') no-repeat center -110px fixed;
   }
-  &.projet-5 header{
+  &.projet-6 header{
     background: $color4 url('../../../../../static/hefed.jpg') no-repeat center -250px fixed;
   }
-  &.projet-6 header{
+  &.projet-7 header{
     background: $color4 url('../../../../../static/logos.jpg') no-repeat center -150px fixed;
   }
-  &.projet-7 header{
-
+  &.projet-8 header{
     background: $color4 url('../../../../../static/calumbi.jpg') no-repeat center -200px fixed;
-    
   }
 
   h2 {

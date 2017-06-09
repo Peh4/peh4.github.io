@@ -1,6 +1,20 @@
 {
   "projets": [
     {
+      "name": "Métropole Aix-Marseille Provence",
+      "desc": "Data-visualisations photographiques, réalisées pour illustrer des concepts clés, présentées à l'occasion d'ateliers réunissants les élus de la métropole",
+      "tags": [ "Photoshop", "html / css / js", "Datavisualisation" ],
+      "client": "The Camp, AMP",
+      "year": "2017",
+      "images": [
+        {"path":"../../static/7paradoxes/prezi-11.jpg", "alt": "Site télédéclaration", "size": "full"},
+        {"path":"../../static/7paradoxes/prezi-06.jpg", "alt": "Site télédéclaration", "size": "full"},
+        {"path":"../../static/7paradoxes/prezi-23.jpg", "alt": "Site télédéclaration", "size": "one-half"},
+        {"path":"../../static/7paradoxes/prezi-26.jpg", "alt": "Site télédéclaration", "size": "one-half"},
+        {"path":"../../static/7paradoxes/prezi-36.jpg", "alt": "Site télédéclaration", "size": "full"}
+      ]
+    },
+    {
       "name": "HATVP",
       "desc": "La HATVP est une autorité administrative indépendante créée le 11 octobre 2013 pour favoriser la transparence de la vie publique. J'ai travaillé sur l'intégration du site de télédéclaration qui permet aux responsables publics de faire leur déclaration de patrimoine et d’intérêts.",
       "tags": [ "Intégration", "html / css / js", "Angular" ],

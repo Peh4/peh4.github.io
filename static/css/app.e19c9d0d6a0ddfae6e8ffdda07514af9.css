@@ -2019,20 +2019,22 @@ body::selection, body::-moz-selection {
   #illustration.projets div {
     display: none; }
   #illustration.projet-0 {
-    background: #ff4200 url(/static/img/home-HATVP.29bc20b.jpg) no-repeat center center scroll; }
+    background: #ff4200 url(/static/img/home-7paradoxes.ccf8d88.jpg) no-repeat center center scroll; }
   #illustration.projet-1 {
-    background: #ff4200 url(/static/img/home-DCG.0d31018.jpg) no-repeat center center scroll; }
+    background: #ff4200 url(/static/img/home-HATVP.29bc20b.jpg) no-repeat center center scroll; }
   #illustration.projet-2 {
-    background: #ff4200 url(/static/img/home-12mars.9c9c088.jpg) no-repeat center center scroll; }
+    background: #ff4200 url(/static/img/home-DCG.0d31018.jpg) no-repeat center center scroll; }
   #illustration.projet-3 {
-    background: #ff4200 url(/static/img/home-collateralFreedom.5e5240f.jpg) no-repeat center center scroll; }
+    background: #ff4200 url(/static/img/home-12mars.9c9c088.jpg) no-repeat center center scroll; }
   #illustration.projet-4 {
-    background: #ff4200 url(/static/img/home-Bilans.1fc166c.jpg) no-repeat center center scroll; }
+    background: #ff4200 url(/static/img/home-collateralFreedom.5e5240f.jpg) no-repeat center center scroll; }
   #illustration.projet-5 {
-    background: #ff4200 url(/static/img/home-HEFED.fa137f7.jpg) no-repeat center center scroll; }
+    background: #ff4200 url(/static/img/home-Bilans.1fc166c.jpg) no-repeat center center scroll; }
   #illustration.projet-6 {
-    background: #ff4200 url(/static/img/home-logos.6c3ad59.jpg) no-repeat center center scroll; }
+    background: #ff4200 url(/static/img/home-HEFED.fa137f7.jpg) no-repeat center center scroll; }
   #illustration.projet-7 {
+    background: #ff4200 url(/static/img/home-logos.6c3ad59.jpg) no-repeat center center scroll; }
+  #illustration.projet-8 {
     background: #ff4200 url(/static/img/home-Calumbi.0249e56.jpg) no-repeat center center scroll; }
 
 .hello .listProjet {
@@ -2068,27 +2070,30 @@ footer {
       border-color: #151926; }
 
 .projet.projet-0 header {
-  background: #ff4200 url(/static/img/hatvp.5dd3275.jpg) no-repeat center -140px fixed; }
+  background: #ff4200 url(/static/img/7paradoxes.674a813.jpg) no-repeat center -225px fixed; }
 
 .projet.projet-1 header {
-  background: #ff4200 url(/static/img/DCG.58f82ff.jpg) no-repeat center -90px fixed; }
+  background: #ff4200 url(/static/img/hatvp.5dd3275.jpg) no-repeat center -140px fixed; }
 
 .projet.projet-2 header {
-  background: #ff4200 url(/static/img/12mars2014.774b081.jpg) no-repeat center -20px fixed; }
+  background: #ff4200 url(/static/img/DCG.58f82ff.jpg) no-repeat center -90px fixed; }
 
 .projet.projet-3 header {
-  background: #ff4200 url(/static/img/collateralFreedom.b31e04a.jpg) no-repeat center -120px fixed; }
+  background: #ff4200 url(/static/img/12mars2014.774b081.jpg) no-repeat center -20px fixed; }
 
 .projet.projet-4 header {
-  background: #ff4200 url(/static/img/bilans.44fb7ea.jpg) no-repeat center -110px fixed; }
+  background: #ff4200 url(/static/img/collateralFreedom.b31e04a.jpg) no-repeat center -120px fixed; }
 
 .projet.projet-5 header {
-  background: #ff4200 url(/static/img/hefed.28976c5.jpg) no-repeat center -250px fixed; }
+  background: #ff4200 url(/static/img/bilans.44fb7ea.jpg) no-repeat center -110px fixed; }
 
 .projet.projet-6 header {
-  background: #ff4200 url(/static/img/logos.ac522e0.jpg) no-repeat center -150px fixed; }
+  background: #ff4200 url(/static/img/hefed.28976c5.jpg) no-repeat center -250px fixed; }
 
 .projet.projet-7 header {
+  background: #ff4200 url(/static/img/logos.ac522e0.jpg) no-repeat center -150px fixed; }
+
+.projet.projet-8 header {
   background: #ff4200 url(/static/img/calumbi.e9ee559.jpg) no-repeat center -200px fixed; }
 
 .projet h2 {
@@ -4495,4 +4500,4 @@ footer {
   overflow: visible;
   clip: auto; }
 
-/*# sourceMappingURL=app.8b820c2daa8e9ad755fa0c9694a9ced7.css.map*/
+/*# sourceMappingURL=app.e19c9d0d6a0ddfae6e8ffdda07514af9.css.map*/
