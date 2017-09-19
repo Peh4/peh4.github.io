@@ -18,7 +18,7 @@
               <div class="text pal">
                 <p>Bonjour, je m’appelle Pierre-Alain Leboucher.<br/>
       Je suis web-designer et intégrateur.
-      Actuellement en Freelance. Je suis disponible pour de nouvelles opportunités.<br/><br/>
+      Actuellement en Freelance. Je suis disponible pour de nouvelles opportunités en novembre.<br/><br/>
 
       J'ai été webmaster & resp. graphisme chez Reporters sans frontières de 2011 à 2015. J'ai aussi travaillé précédemment pour des clients variés tels que la HATVP, ALGECO, l'OKFfr, Mission enfance…
                 </p>
